@@ -1,0 +1,140 @@
+.comparison {
+  &-icon {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    margin-bottom: 3.2rem;
+    br {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &-table {
+    width: 100%;
+    @media (max-width: 1441px) {
+      max-width: 120rem;
+      margin: auto;
+    }
+    @media (max-width: 767px) {
+      width: 800px;
+      animation: marqueeTable 2s linear infinite 2s;
+    }
+    &:hover,&:active {
+      animation:none;
+    }
+    &-wrapper {
+      padding-bottom: 1rem;
+      overflow: auto;
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 0;
+      @media (max-width: 767px) {
+        padding: 0.5rem 0;
+      }
+
+      &:nth-child(even) {
+        background: #FFF;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-bottom: 1px solid #EDF0F6;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #EDF0F6;
+      }
+    }
+
+    &-body {
+      overflow: hidden;
+      border-radius: 2rem;
+      border: 1px solid #EDF0F6;
+      background: #F5FBFD;
+
+      color: #000;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%; /* 2.56rem */
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+
+      .comparison-table-column:nth-child(1) {
+        justify-content: flex-start;
+        padding: 0 3rem;
+        @media (max-width: 992px) {
+          padding: 0 1rem;
+        }
+      }
+
+    }
+
+    &-column {
+      padding: 5px;
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+
+      .tariffs-item__label {
+        @media (max-width: 1441px) {
+          margin: 0;
+        }
+        @media (max-width: 767px) {
+          font-weight: 500;
+        }
+      }
+
+      &:nth-child(1) {
+        @media (max-width: 1441px) {
+          width: 34%;
+        }
+      }
+
+      @media (max-width: 1441px) {
+        width: 22%;
+        gap: 1rem;
+      }
+    }
+
+    &-head {
+      color: #000;
+      text-align: center;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      .comparison-table-column {
+        @media (max-width: 992px) {
+          flex-direction: column-reverse;
+        }
+      }
+      .comparison-table-row {
+        @media (max-width: 992px) {
+        align-items: flex-end;
+        }
+      }
+      @media (max-width: 1441px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

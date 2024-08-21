@@ -1,0 +1,120 @@
+.contact{
+  &-section{
+    &__title:not(:last-child)  {
+      margin-bottom: 6rem;
+      @media (max-width: 1025px){
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  &-row{
+    display: flex;
+    gap: 3rem;
+    @media (max-width: 1025px){
+      gap: 1rem;
+    }
+    @media (max-width: 700px){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-form{
+    textarea{
+      height: 16rem;
+    }
+    .checkbox-wrapper {
+      color: #C9D9DF;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+    }
+    &__title {
+      margin-bottom: 3rem;
+      color: #FFF;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: left;
+      @media (max-width: 1025px){
+        font-size: 2.6rem;
+      }
+    }
+    &-container{
+      width: 100%;
+      max-width: 108.4rem;
+      padding: 4rem;
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: linear-gradient(84deg, rgba(255, 255, 255, 0.20) 15.19%, rgba(255, 255, 255, 0.05) 48.08%, rgba(255, 255, 255, 0.11) 70.55%, rgba(255, 255, 255, 0.20) 95.04%);
+      @media (max-width: 1025px){
+        padding: 2rem;
+      }
+    }
+    .form-label.third{
+      @media (max-width: 769px){
+        width: 100%;
+      }
+    }
+
+  }
+  &-information {
+    width: 41.6rem;
+    padding: 4rem;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: linear-gradient(84deg, rgba(255, 255, 255, 0.20) 15.19%, rgba(255, 255, 255, 0.05) 48.08%, rgba(255, 255, 255, 0.11) 70.55%, rgba(255, 255, 255, 0.20) 95.04%);
+    @media (max-width: 1025px){
+      width: 36rem;
+      padding: 2rem;
+    }
+    @media (max-width: 769px){
+      width: 30rem;
+    }
+    @media (max-width: 700px){
+      width: 41.6rem;
+    }
+    @media (max-width: 500px){
+      width: 100%;
+    }
+
+    &__title{
+      margin-bottom: 1.2rem!important;
+    }
+    &-networks {
+      .social-networks {
+        justify-content: flex-start;
+      }
+    }
+    &, & > *, &__text{
+      text-align: left;
+      color: #C9D9DF;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      & > *:not(:last-child){
+
+        margin-bottom: 3.2rem;
+      }
+      a{
+        text-decoration-line: underline;
+      }
+      strong {
+        display: inline-block;
+        &:not(:last-child){
+
+          margin-bottom: 1.2rem;
+        }
+        color: #FFF;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+}

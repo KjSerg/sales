@@ -1,0 +1,37 @@
+.see{
+  &-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-content {
+    display: flex;
+    padding: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: linear-gradient(84deg, rgba(255, 255, 255, 0.15) 15.19%, rgba(255, 255, 255, 0.04) 48.08%, rgba(255, 255, 255, 0.08) 70.55%, rgba(255, 255, 255, 0.15) 95.04%);
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease;
+    @media (max-width: 768px) {
+      padding: 6rem 2rem;
+    }
+    &:hover {
+      backdrop-filter: blur(20px);
+    }
+  }
+  &__title {
+    margin-bottom: 1.6rem;
+    color: #FFF;
+  }
+  &__description {
+    color: #EDEDED;
+    &:not(:last-child){
+      margin-bottom: 3.2rem;
+    }
+  }
+}

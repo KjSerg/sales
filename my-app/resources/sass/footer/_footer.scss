@@ -1,0 +1,200 @@
+.footer{
+  background: #021A1A;
+  .social-network {
+    @media (max-width: 1365px){
+      width: 3rem;
+      height: 3rem;
+      padding: 6px;
+    }
+    &:not(:last-child){
+      @media (max-width: 1365px){
+        margin-right: 1rem;
+      }
+    }
+
+  }
+  &-social-networks {
+    @media (max-width: 1025px){
+      width: 100%;
+      margin-top: 3rem;
+      justify-content: flex-start;
+    }
+    @media (max-width: 520px){
+      justify-content: center;
+    }
+  }
+  &-columns{
+    display: flex;
+    @media (max-width: 520px){
+      flex-direction: column;
+    }
+    &:not(:last-child){
+      margin-right: 2rem;
+      @media (max-width: 1025px){
+        margin-right: 0;
+      }
+    }
+  }
+  &-column{
+    opacity: 0.7;
+    &-menu{
+      @media (min-width: 521px){
+        display: block!important;
+      }
+      @media (max-width: 520px){
+        display: none;
+        padding-bottom: 2rem;
+      }
+    }
+    ul {
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @media (max-width: 1365px){
+        font-size: 1.4rem;
+      }
+
+      &>*{
+        margin-bottom: 0.4rem;
+      }
+      a{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+          text-decoration: underline;
+        }
+        @media (max-width: 1365px){
+          font-size: 1.4rem;
+        }
+        @media (max-width: 520px){
+          display: block;
+          padding: 0.5rem 0;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &:not(:last-child){
+      margin-right: 6rem;
+      @media (max-width: 1367px){
+        margin-right: 3rem;
+      }
+      @media (max-width: 520px){
+        margin-right: 0;
+      }
+    }
+    &__title{
+      margin-bottom: 1.6rem;
+      color: #2FC385;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      pointer-events: none;
+      @media (max-width: 520px){
+        pointer-events: auto;
+      }
+    }
+  }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem 0 4rem 0;
+    @media (max-width: 1025px){
+      flex-wrap: wrap;
+      padding: 3rem 0;
+    }
+
+  }
+  &-logo  {
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    width: 11.5rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+  }
+  &-description{
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    width: 100%;
+    max-width:  37.5rem;
+    color: #647A82;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 2.08rem */
+    br{
+      @media (max-width: 1365px){
+        display: none;
+      }
+    }
+    @media (max-width: 1365px){
+      max-width:  30rem;
+    }
+    @media (max-width: 1025px){
+      margin-right: 4rem;
+    }
+    @media (max-width: 830px){
+      margin-right: 0;
+      max-width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+  &-bottom{
+    padding: 1.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.5;
+    @media (max-width: 520px){
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &-links {
+    a{
+      display: inline-block;
+      color: #FFF;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &>*{
+        &:not(:last-child){
+          margin-right: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.copyright{
+  &:not(:last-child){
+    margin-right: 2rem;
+    @media (max-width: 520px){
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  color: #FFF;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

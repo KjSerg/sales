@@ -1,0 +1,158 @@
+.sectors {
+  font-family: "Nunito Sans", sans-serif;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 6.8rem;
+    }
+
+
+    &-content {
+      width: 100%;
+      max-width: 57rem;
+      @media (max-width: 1440px) {
+        max-width: 43rem;
+      }
+      @media (max-width: 1366px) {
+        max-width: 36rem;
+      }
+      @media (max-width: 730px) {
+        max-width: 43rem;
+      }
+    }
+
+    &__controls {
+      display: flex;
+    }
+
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 3.2rem;
+        @media (max-width: 730px) {
+          margin-bottom: 2rem;
+        }
+      }
+
+      color: #38474C;
+      opacity: 0.8;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      @media (max-width: 730px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.2rem;
+      color: #000;
+      font-size: 2.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      @media (max-width: 730px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__subtitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.8rem;
+      color: #2FC385;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 1.68rem */
+      letter-spacing: 0.048rem;
+      text-transform: uppercase;
+      @media (max-width: 730px) {
+        margin-bottom: 2rem;
+      }
+
+      .icon {
+        margin-right: 0.8rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    &__image {
+      display: flex;
+      width: 74.9rem;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 6rem;
+      padding: 3rem;
+      padding-bottom: 0;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1.5rem;
+      background: #F5FBFD;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        transition: 0.4s ease;
+      }
+
+      @media (max-width: 1024px) {
+        width: 61rem;
+      }
+      @media (max-width: 900px) {
+        width: 50rem;
+        margin-right: 2rem;
+      }
+      @media (max-width: 730px) {
+        width: 30rem;
+      }
+      @media (max-width: 550px) {
+        width: 20rem;
+      }
+      @media (max-width: 450px) {
+        width: 80%;
+        margin: 0 auto 2rem auto;
+      }
+    }
+
+    &:nth-child(2n+2) {
+      flex-direction: row-reverse;
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      .sectors-item__image {
+        margin-right: 0;
+        margin-left: 6rem;
+        @media (max-width: 900px) {
+          margin-left: 2rem;
+
+        }
+        @media (max-width: 450px) {
+          margin: 0 auto 2rem auto;
+        }
+      }
+    }
+  }
+
+  &-section {
+
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+}
