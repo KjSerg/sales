@@ -34,6 +34,7 @@ export default class Slick {
             const $slider = $(this);
             var $prev = $(this).closest('section').find('.slick__prev');
             var $next = $(this).closest('section').find('.slick__next');
+            if($slider.find('>*').length < 3) return;
             $slider.slick({
                 slidesToShow: 3,
                 arrows: true,

@@ -6,6 +6,7 @@ import {startMarquee} from "./_marquee";
 import {modalsInit} from './_modals';
 import {accordion} from "./_accardion";
 import article from "./_article";
+import {pagination, renderContainer} from "./_pagination";
 
 
 export default class Application {
@@ -21,7 +22,19 @@ export default class Application {
             _this.initComponents();
             _this.cf7();
         });
+        $(window).on('load', function () {
+            _this.hideLoader();
+        });
+        window.addEventListener("popstate", function (event) {
+            renderContainer(document.location);
+        });
         _this.cf7Listener();
+    }
+
+    hideLoader() {
+        setTimeout(function () {
+            $(document).find('.page-loader').fadeOut();
+        }, 2000);
     }
 
     setBrowser() {
@@ -38,6 +51,7 @@ export default class Application {
         modalsInit();
         accordion();
         article();
+        pagination();
     }
 
     initPlugins() {
@@ -108,7 +122,6 @@ export default class Application {
             });
         });
     }
-
 
     formsInit() {
         let $doc = $(document);

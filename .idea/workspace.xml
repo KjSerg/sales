@@ -5,160 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfdc74ef-4a87-4ffb-ba95-791a0a590943" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/vendor/slick-slider/slick/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/vendor/slick-slider/slick/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/vendor/slick-slider/slick/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/fonts/vendor/slick-slider/slick/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/images/vendor/slick-slider/slick/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/404bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/_check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a12.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a13.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a14.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a15.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a16.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a17.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a18.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a19.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a20.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/a9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/arr-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/article-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/article-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/blog-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/blogitem1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/businessman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/case-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/circle-link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/contacts-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/f1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/f2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/f3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/f4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/faq-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/flash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/head-decorative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/head-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/ii1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/ii1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/mes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/nfbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/not.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/opencart-single.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/opencart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/p1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/p2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/p3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/partners-head-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/pl1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/pl2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/pl3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/pl4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/pl5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/prom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/r1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/review-circle-decor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/s1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/s2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/s3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/s4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/s5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/screen4_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/si.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/si1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/si2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/si3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/si4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/single-services-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/soc1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/soc2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/soc3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/soc4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/soc5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/tarrifs-decor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/tarrigs_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/time.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/img/woocomerce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/industries.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/js/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/js/vendor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/partnership.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/price.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/Application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/Slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_accardion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_burger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_marquee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_keyframes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/blog/_article.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/blog/_blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/blog/_similar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/blog/_subscribe.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_advantages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_application-section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_cases.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_comparison.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_faq.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_head.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_industries.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_init.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_not-found.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_partners.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_reviews.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_sectors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_see-section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_services.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/components/_tariffs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/contact/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/footer/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/header/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/plugins/_selectric.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/plugins/slick/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/resources/sass/plugins/slick/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/single-blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/single-industries.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/single-services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/resources/js/components/_pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/img/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/js/components/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/js/components/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/js/components/Slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/js/components/Slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/sass/base/_keyframes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_keyframes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/sass/base/_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/sass/base/_style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/sass/blog/_subscribe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/sass/blog/_subscribe.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/resources/sass/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/resources/sass/header/_header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +46,8 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Сергій/Documents/work/sales/my-app&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Сергій/Documents/work/salesWP&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -232,7 +90,9 @@
       <workItem from="1723787420697" duration="30488000" />
       <workItem from="1724049346714" duration="28689000" />
       <workItem from="1724133055742" duration="17913000" />
-      <workItem from="1724215202870" duration="25858000" />
+      <workItem from="1724215202870" duration="28958000" />
+      <workItem from="1724306704260" duration="14572000" />
+      <workItem from="1724390879190" duration="7950000" />
     </task>
     <servers />
   </component>

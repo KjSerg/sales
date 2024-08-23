@@ -34,6 +34,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_modals */ "./resources/js/components/_modals.js");
 /* harmony import */ var _accardion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_accardion */ "./resources/js/components/_accardion.js");
 /* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./_article */ "./resources/js/components/_article.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./_pagination */ "./resources/js/components/_pagination.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
@@ -41,6 +42,7 @@ function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = 
 function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 
 
@@ -64,7 +66,20 @@ var Application = /*#__PURE__*/function () {
         _this.initComponents();
         _this.cf7();
       });
+      $(window).on('load', function () {
+        _this.hideLoader();
+      });
+      window.addEventListener("popstate", function (event) {
+        (0,_pagination__WEBPACK_IMPORTED_MODULE_8__.renderContainer)(document.location);
+      });
       _this.cf7Listener();
+    }
+  }, {
+    key: "hideLoader",
+    value: function hideLoader() {
+      setTimeout(function () {
+        $(document).find('.page-loader').fadeOut();
+      }, 2000);
     }
   }, {
     key: "setBrowser",
@@ -83,6 +98,7 @@ var Application = /*#__PURE__*/function () {
       (0,_modals__WEBPACK_IMPORTED_MODULE_5__.modalsInit)();
       (0,_accardion__WEBPACK_IMPORTED_MODULE_6__.accordion)();
       (0,_article__WEBPACK_IMPORTED_MODULE_7__["default"])();
+      (0,_pagination__WEBPACK_IMPORTED_MODULE_8__.pagination)();
     }
   }, {
     key: "initPlugins",
@@ -264,6 +280,7 @@ var Slick = /*#__PURE__*/function () {
         var $slider = $(this);
         var $prev = $(this).closest('section').find('.slick__prev');
         var $next = $(this).closest('section').find('.slick__next');
+        if ($slider.find('>*').length < 3) return;
         $slider.slick({
           slidesToShow: 3,
           arrows: true,
@@ -759,6 +776,69 @@ function closeModal() {
   if ($el.hasClass('player-window')) {
     $el.html('');
   }
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/_pagination.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/_pagination.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   pagination: () => (/* binding */ pagination),
+/* harmony export */   renderContainer: () => (/* binding */ renderContainer)
+/* harmony export */ });
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_helpers */ "./resources/js/components/_helpers.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+var $doc = $(document);
+var load = false;
+var loading = false;
+var parser = new DOMParser();
+var $body = $('body');
+function pagination() {
+  $(document).on('click', '.pagination-js a', function (e) {
+    e.preventDefault();
+    var $button = $(this);
+    var href = $button.attr('href');
+    renderContainer(href, {
+      addEntry: true
+    });
+  });
+}
+function renderContainer(url) {
+  var args = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var addEntry = args.addEntry || false;
+  var $container = $doc.find('.container-js');
+  var $pagination = $doc.find('.pagination-js');
+  if (url === undefined) return;
+  if (loading) return;
+  loading = true;
+  $pagination.addClass('not-active');
+  (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.showPreloader)();
+  if (addEntry === true) window.history.pushState({}, '', url);
+  var param = {
+    type: 'GET',
+    url: url
+  };
+  $.ajax(param).done(function (r) {
+    (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.hidePreloader)();
+    loading = false;
+    if (r) {
+      var $requestBody = $(parser.parseFromString(r, "text/html"));
+      $container.html($requestBody.find('.container-js').html());
+      $pagination.html($requestBody.find('.pagination-js').html());
+      $pagination.removeClass('not-active');
+    } else {
+      $pagination.html('');
+    }
+  }).fail(function (jqXHR, textStatus, errorThrown) {
+    renderContainer(url);
+  });
 }
 
 /***/ }),

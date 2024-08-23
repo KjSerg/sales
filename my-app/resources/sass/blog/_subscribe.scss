@@ -1,9 +1,15 @@
 .subscribe {
   &-form-wrapper{
     width: 100%;
-
+    .form {
+      gap: 0;
+    }
+    .form-label {
+      margin: 0;
+    }
     button{
       position: absolute;
+      width: auto;
       right: 0;
       top: 0;
       height: 100%;
