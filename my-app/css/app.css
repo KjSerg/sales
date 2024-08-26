@@ -1497,7 +1497,7 @@ ol li:before {
 .header-nav a:hover {
   opacity: 0.8;
 }
-.header-nav li.active a {
+.header-nav li.active a, .header-nav .current-menu-item a {
   opacity: 1;
 }
 .header-nav ul {
@@ -1817,6 +1817,22 @@ ol li:before {
 @media (max-width: 991px) {
   .head-section--inner {
     padding-bottom: 4rem;
+  }
+}
+
+main.content > .breadcrumbs {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 153rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2.6rem;
+}
+@media (max-width: 1550px) {
+  main.content > .breadcrumbs {
+    padding: 0 1.6rem;
   }
 }
 

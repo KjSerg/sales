@@ -44,7 +44,25 @@ export default class Application {
 
     initComponents() {
         const _this = this;
-        $(document).on('click', 'a[href^="http"]:not(.scroll-up, .product-gallery__item)', showPreloader);
+        $(document).on('click', 'a[href^="http"]:not(.scroll-up, .product-gallery__item)', function (e) {
+
+            const $t = $(this);
+            const href = $t.attr('href');
+            const url = new URL(href);
+            if (url.hash) {
+                const $el = $(document).find(url.hash);
+                if ($el.length === 0) {
+                    showPreloader();
+                } else {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $el.offset().top
+                    }, 200);
+                }
+            } else {
+                showPreloader();
+            }
+        });
         burger();
         tabs();
         startMarquee();

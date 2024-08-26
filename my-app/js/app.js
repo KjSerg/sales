@@ -91,7 +91,24 @@ var Application = /*#__PURE__*/function () {
     key: "initComponents",
     value: function initComponents() {
       var _this = this;
-      $(document).on('click', 'a[href^="http"]:not(.scroll-up, .product-gallery__item)', _helpers__WEBPACK_IMPORTED_MODULE_1__.showPreloader);
+      $(document).on('click', 'a[href^="http"]:not(.scroll-up, .product-gallery__item)', function (e) {
+        var $t = $(this);
+        var href = $t.attr('href');
+        var url = new URL(href);
+        if (url.hash) {
+          var $el = $(document).find(url.hash);
+          if ($el.length === 0) {
+            (0,_helpers__WEBPACK_IMPORTED_MODULE_1__.showPreloader)();
+          } else {
+            e.preventDefault();
+            $('html, body').animate({
+              scrollTop: $el.offset().top
+            }, 200);
+          }
+        } else {
+          (0,_helpers__WEBPACK_IMPORTED_MODULE_1__.showPreloader)();
+        }
+      });
       (0,_burger__WEBPACK_IMPORTED_MODULE_0__.burger)();
       (0,_tabs__WEBPACK_IMPORTED_MODULE_2__.tabs)();
       (0,_marquee__WEBPACK_IMPORTED_MODULE_4__.startMarquee)();
@@ -805,14 +822,18 @@ function pagination() {
     e.preventDefault();
     var $button = $(this);
     var href = $button.attr('href');
+    var append = $button.hasClass('more-link-js');
+    var addEntry = !$button.hasClass('more-link-js');
     renderContainer(href, {
-      addEntry: true
+      addEntry: addEntry,
+      append: append
     });
   });
 }
 function renderContainer(url) {
   var args = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var addEntry = args.addEntry || false;
+  var append = args.append || false;
   var $container = $doc.find('.container-js');
   var $pagination = $doc.find('.pagination-js');
   if (url === undefined) return;
@@ -830,9 +851,21 @@ function renderContainer(url) {
     loading = false;
     if (r) {
       var $requestBody = $(parser.parseFromString(r, "text/html"));
-      $container.html($requestBody.find('.container-js').html());
-      $pagination.html($requestBody.find('.pagination-js').html());
-      $pagination.removeClass('not-active');
+      if (append) {
+        $container.append($requestBody.find('.container-js').html());
+      } else {
+        $container.html($requestBody.find('.container-js').html());
+      }
+      if ($requestBody.find('.pagination-js').length > 0) {
+        $pagination.html($requestBody.find('.pagination-js').html());
+        $pagination.removeClass('not-active');
+      } else {
+        if (append) {
+          $pagination.remove();
+        } else {
+          $pagination.html('');
+        }
+      }
     } else {
       $pagination.html('');
     }
