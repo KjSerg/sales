@@ -1585,6 +1585,17 @@ ol li:before {
   flex-shrink: 0;
   margin-right: auto;
 }
+@media (max-width: 450px) {
+  .logo {
+    width: 19rem;
+    height: 5rem;
+  }
+}
+@media (max-width: 350px) {
+  .logo {
+    width: 17rem;
+  }
+}
 
 .burger {
   display: none;

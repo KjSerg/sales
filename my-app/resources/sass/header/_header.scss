@@ -131,6 +131,13 @@
   height: 4.5rem;
   flex-shrink: 0;
   margin-right: auto;
+  @media (max-width: 450px){
+    width: 19rem;
+    height: 5rem;
+  }
+  @media (max-width: 350px){
+    width: 17rem;
+  }
 }
 
 .burger {
